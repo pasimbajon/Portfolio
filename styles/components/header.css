@@ -1,17 +1,23 @@
 .header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
     position: relative;
-    z-index: 3;
+    z-index: 10;
 }
 
-.header__icon{
-    display: block;
-    width: 2.5rem;
-    height: 2.5rem;
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    font-size: var(--size-lg);
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: -0.05em;
+    transition: color 0.3s;
 }
 
 .header__menu{
@@ -46,7 +52,7 @@
     }
     
     .header__link{
-        font-size: var(--size-xs);
+        font-size: var(--size-sm);
         text-decoration: none;
         font-weight: 600;
         color: var(--text);
@@ -62,22 +68,15 @@
         border: 1px solid var(--text);
         padding-top: 1.5em;
     }
-    
-    .header__sun{
-        display: block;
-        color: var(--text);
-        width: var(--size-base);
-        height: var(--size-base);
-    }
 
     #header__theme-switcher{
         background-color: var(--switch-bg);
         border-radius: 50px;
         display: flex;
         align-items: center;
-        gap: 1.33rem;
+        gap: 1rem;
         cursor: pointer;
-        padding: 0.66rem;
+        padding: 0.5rem;
         position: relative;
         transform: var(--default-border-radius);
     }
@@ -85,8 +84,8 @@
     #header__theme-switcher::before{
         content: '';
         position: absolute;
-        width: 2.22rem;
-        height: 2.22rem;
+        width: var(--size-3xl);
+        height: var(--size-3xl);
         background-color: var(--switch-circle-bg);
         border-radius: 50px;
         z-index: 0;
@@ -103,14 +102,14 @@
     #header__icon-sun{
         display: block;
         fill: var(--icon-sun);
-        width: var(--size-xl);
-        height: var(--size-xl);
+        width: var(--size-base);
+        height: var(--size-base);
     }
     #header__icon-moon{
         display: block;
         fill: var(--icon-moon);
-        width: var(--size-xl);
-        height: var(--size-xl);
+        width: var(--size-base);
+        height: var(--size-base);
     }
     
     .header__resume{

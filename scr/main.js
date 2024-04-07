@@ -4,8 +4,10 @@ import '../styles/components/header.css'
 import '../styles/components/hero.css'
 import '../styles/components/about.css'
 import '../styles/components/mobile-nav.css'
-import '../styles/utilities.css'
+import '../styles/utils.css'
 
-import mobileNav from './utilities/mobile-nav';
+import mobileNav from './utils/mobile-nav';
 mobileNav();
-import switchTheme from './utilities/dark-theme';
+import switchTheme from './utils/dark-theme';
+import inputTxt from './utils/input-txt';
+inputTxt();

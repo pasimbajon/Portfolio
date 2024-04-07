@@ -1,4 +1,4 @@
-//Switch funtion
+//Switch function
 const switchTheme= () => {
     //Get the root element and data-theme value
     const rootElement = document.documentElement
@@ -14,7 +14,7 @@ const switchTheme= () => {
     //Set the new local storage item
     localStorage.setItem('theme', newTheme);
 };
-//Add eventlistiner fotr the theme switcher
+//Add event listener fot the theme switcher
 document.querySelector('#header__theme-switcher').addEventListener('click', switchTheme);
 document.querySelector('#mobile__theme-switcher').addEventListener('click', switchTheme);
 

@@ -1,17 +1,27 @@
 .hero{
-    text-align:center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 2rem;
     margin-top: 2rem;
+    background-color: var(--background);
 }
 
 .hero__img{
-    border-radius: 50%;
-    width: 6rem;
-    height: 6rem;
+    --img-width-size:20rem;
+    --img-height-size: 20rem;
+    border-radius: 0.25rem;
+    width: 20rem;
+    height:20rem;
+    object-fit: cover;
+}
+
+.header__hero{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 0.5rem;
 }
 
 .hero__subtitle{
@@ -42,12 +52,15 @@
 /* xs */
 @media (min-width: 475px){
     .hero{
-        gap: 1.5rem;
+        gap: 1rem;
     }
     
     .hero__img{
-        width: 6.5rem;
-        height: 6.5rem;
+        width: var(--img-width-size);
+        height: var(--img-height-size);
+    }
+    .header__hero{
+        gap: 1.5rem;
     }
     
     .hero__subtitle{
@@ -67,14 +80,45 @@
     }
 }
 /* sm */
-/* @media (min-width: 640px){} */
+@media (min-width: 640px){
+    .hero{
+        flex-direction: row;
+    }
+    
+    .hero__img{
+        width: var(--img-width-size);
+        height: var(--img-height-size);
+    }
+    .header__hero{
+        gap: 1.5rem;
+    }
+    
+    .hero__subtitle{
+        font-size: var(--size-lg);
+    }
+    
+    .hero__title{
+        font-size: var(--size-4xl);
+    }
+    
+    .hero__description{
+        font-size: var(--size-base);
+    }
+    
+    .hero__btn{
+        font-size: var(--size-base)
+    }
+}
 /* md */
 /* @media (min-width: 768px){} */
 /* lg */
 @media (min-width: 1024px){    
+    .hero{
+        flex-direction: row;
+    }
     .hero__img{
-        width: 8rem;
-        height: 8rem;
+        width: var(--img-width-size);
+        height: var(--img-height-size);
     }
     
     .hero__subtitle{
@@ -82,7 +126,7 @@
     }
     
     .hero__title{
-        font-size: var(--size-7xl);
+        font-size: var(--size-6xl);
     }
     
     .hero__description{
@@ -96,11 +140,15 @@
 /* xL */
 @media (min-width: 1280px){
     .hero{
+        flex-direction: row;
         gap: 2rem
     }
     .hero__img{
-        width: 10rem;
-        height: 10rem;
+        width: var(--img-width-size);
+        height: var(--img-height-size);
+    }
+    .header__hero{
+        gap: 1rem;
     }
     
     .hero__subtitle{
@@ -108,7 +156,7 @@
     }
     
     .hero__title{
-        font-size: var(--size-9xl);
+        font-size: var(--size-8xl);
     }
     
     .hero__description{

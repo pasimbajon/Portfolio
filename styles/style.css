@@ -1,5 +1,6 @@
 :root[data-theme="light"] {
     --text: #060a0e;
+    --secondary-text:#16833e;
     --background: #e4e4e7;
     --primary: #21c45d;
     --secondary: #36d399;
@@ -13,13 +14,14 @@
   }
 :root[data-theme="dark"] {
     --text: #f1f5f9;
+    --secondary-text:#7ce9a4;
     --background: #18181b;
     --primary: #3bde77;
     --secondary: #2cc98f;
     --accent: #3bde77;
     --switch-bg: #2d2c35;
     --switch-circle-bg: #7190ff;
-    --switch-circle-pos: 2.72rem;
+    --switch-circle-pos: 2rem;
     --muted-txt: #77757e;
     --icon-sun: var(--muted-text);
     --icon-moon: #dce3ff;
@@ -84,9 +86,9 @@ button{
 }
 
 a{
-    color: var(--primary);
+    color: var(--secondary-text);
 }
 
 strong{
-    color: var(--primary);
+    color: var(--secondary-text);
 }
