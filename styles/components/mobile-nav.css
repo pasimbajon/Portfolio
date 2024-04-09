@@ -52,9 +52,9 @@
     border-radius: 50px;
     display: flex;
     align-items: center;
-    gap: 1.33rem;
+    gap: 1rem;
     cursor: pointer;
-    padding: 0.66rem;
+    padding: 0.5rem;
     position: relative;
     transform: var(--default-border-radius);
 }
@@ -62,8 +62,8 @@
 #mobile__theme-switcher::before{
     content: '';
     position: absolute;
-    width: 2.22rem;
-    height: 2.22rem;
+    width: var(--size-3xl);
+    height: var(--size-3xl);
     background-color: var(--switch-circle-bg);
     border-radius: 50px;
     z-index: 0;
@@ -80,14 +80,14 @@
 #mobile__icon-sun{
     display: block;
     fill: var(--icon-sun);
-    width: var(--size-xl);
-    height: var(--size-xl);
+    width: var(--size-base);
+    height: var(--size-base);
 }
 #mobile__icon-moon{
     display: block;
     fill: var(--icon-moon);
-    width: var(--size-xl);
-    height: var(--size-xl);
+    width: var(--size-base);
+    height: var(--size-base);
 }
 
 .mobile-nav__btn{

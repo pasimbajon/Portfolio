@@ -22,18 +22,26 @@ const inputTxt = () =>{
   document.getElementsByClassName("hero__description")[0].innerHTML = heroText.heroDesc;
   document.getElementsByClassName("about__title")[0].innerHTML = aboutTexts.aboutTitle;
   document.getElementsByClassName("about__subtitle")[0].innerHTML = aboutTexts.aboutSubtitlte;
+  let projectListOfTechsOne = document.getElementsByClassName("prod__one");
+  let projectListOfTechsTwo = document.getElementsByClassName("prod__two");
   let aboutDescs = document.getElementsByClassName("about__description");
+  let aboutListOfTech = document.getElementsByClassName("about__list");
   for(var ctr = 0; ctr < aboutDescs.length; ctr++){
     aboutDescs[ctr].innerHTML = aboutTexts.aboutDescription[ctr];
   }
-  let aboutListOfTech = document.getElementsByClassName("about__list");
   for(var ctnr = 0; ctnr < aboutListOfTech.length; ctnr++){
     aboutListOfTech[ctnr].innerHTML = techList[ctnr];
   }
-  let projectListOfTechs = document.getElementsByClassName("project__list");
-  for(var ctr = 0; ctr < projectListOfTechs.length;ctr++){
-    projectListOfTechs[ctr].innerHTML = techList[ctr];
+  for(var ctr = 0; ctr < projectListOfTechsOne.length; ctr++){
+    projectListOfTechsOne[ctr].innerHTML = techList[ctr];
   }
+  for(var ctr = 0; ctr < projectListOfTechsTwo.length; ctr++){
+    projectListOfTechsTwo[ctr].innerHTML = techList[ctr];
+  }
+
+
+
+  
 }
 
 export default inputTxt;
