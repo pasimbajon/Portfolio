@@ -16,7 +16,7 @@
     object-fit: cover;
 }
 
-.header__hero{
+.hero__content{
     display: flex;
     flex-direction: column;
     align-items: start;

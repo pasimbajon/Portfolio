@@ -14,20 +14,25 @@ const inputTxt = () =>{
       "I like to code and drink coffee. Turn on my computer and just code all day."
     ],
     aboutSubtitlte: "Technologies",
-    aboutList: ["JavaScript (ES6+)", "CSS", "HTML", "ReactJS", "Bootstrap", "Laravel"],
-
   };
+  const techList = ["JavaScript(ES6+)", "CSS", "HTML", "ReactJS", "Bootstrap", "Laravel"];
+
   document.getElementsByClassName("hero__title")[0].innerHTML = heroText.heroTitle;
   document.getElementsByClassName("hero__subtitle")[0].innerHTML = heroText.heroSubtitle;
   document.getElementsByClassName("hero__description")[0].innerHTML = heroText.heroDesc;
   document.getElementsByClassName("about__title")[0].innerHTML = aboutTexts.aboutTitle;
+  document.getElementsByClassName("about__subtitle")[0].innerHTML = aboutTexts.aboutSubtitlte;
   let aboutDescs = document.getElementsByClassName("about__description");
   for(var ctr = 0; ctr < aboutDescs.length; ctr++){
     aboutDescs[ctr].innerHTML = aboutTexts.aboutDescription[ctr];
   }
   let aboutListOfTech = document.getElementsByClassName("about__list");
   for(var ctnr = 0; ctnr < aboutListOfTech.length; ctnr++){
-    aboutListOfTech[ctnr].innerHTML = aboutTexts.aboutList[ctnr];
+    aboutListOfTech[ctnr].innerHTML = techList[ctnr];
+  }
+  let projectListOfTechs = document.getElementsByClassName("project__list");
+  for(var ctr = 0; ctr < projectListOfTechs.length;ctr++){
+    projectListOfTechs[ctr].innerHTML = techList[ctr];
   }
 }
 
