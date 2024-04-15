@@ -1,0 +1,67 @@
+.contact{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.contact__title{
+  font-size: var(--size-2xl);
+}
+
+.contact__content{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact__info{
+  padding: 1rem;
+}
+
+.contact__list-container{
+  list-style-type: none;
+  padding-right: 1rem;
+}
+
+.contact__icons{
+  display: flex;
+}
+
+.social__icons{
+  width: 2rem;
+  height: 2rem;
+  fill: var(--text);
+}
+
+.contact__form{
+  width: 600px;
+}
+
+.contact__form input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+/* xs */
+/* @media (min-width: 475px){} */
+
+/* sm */
+/* @media (min-width: 640px){} */
+
+/* md */
+/* @media (min-width: 768px){} */
+
+/* lg */
+/* @media (min-width: 1024px){} */
+
+/* xL */
+/* @media (min-width: 1280px){} */
+
+/* 2xL */
+/* @media (min-width: 1536px){} */

@@ -9,13 +9,15 @@ const inputTxt = () =>{
   const aboutTexts = {
     aboutTitle: "About",
     aboutDescription: [
-      "Hello! I'm Paul <strong>Web developer</strong> living in Cagayan de Oro City.I graduated with Bachelor of Science Computer Science in Ateneo De Cagayan - Xavier University.",
+      "Hello! I'm Paul <strong>Web developer</strong> living in Cagayan de Oro City. I graduated with Bachelor of Science Computer Science in Ateneo De Cagayan - Xavier University.",
       "I like to sit and use my computer all day. Love to lean new things everyday.",
       "I like to code and drink coffee. Turn on my computer and just code all day."
     ],
     aboutSubtitlte: "Technologies",
   };
   const techList = ["JavaScript(ES6+)", "CSS", "HTML", "ReactJS", "Bootstrap", "Laravel"];
+
+  const contactArray = ["paularnoldsimbajon@gmail.com","09366587456"];
 
   document.getElementsByClassName("hero__title")[0].innerHTML = heroText.heroTitle;
   document.getElementsByClassName("hero__subtitle")[0].innerHTML = heroText.heroSubtitle;
@@ -26,6 +28,7 @@ const inputTxt = () =>{
   let projectListOfTechsTwo = document.getElementsByClassName("prod__two");
   let aboutDescs = document.getElementsByClassName("about__description");
   let aboutListOfTech = document.getElementsByClassName("about__list");
+  let contactList = document.getElementsByClassName("contact__list");
   for(var ctr = 0; ctr < aboutDescs.length; ctr++){
     aboutDescs[ctr].innerHTML = aboutTexts.aboutDescription[ctr];
   }
@@ -37,6 +40,9 @@ const inputTxt = () =>{
   }
   for(var ctr = 0; ctr < projectListOfTechsTwo.length; ctr++){
     projectListOfTechsTwo[ctr].innerHTML = techList[ctr];
+  }
+  for(var ctr = 0; ctr < contactArray.length; ctr++){
+    contactList[ctr].innerHTML = contactArray[ctr];
   }
 
 
