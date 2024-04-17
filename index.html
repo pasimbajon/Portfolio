@@ -23,7 +23,8 @@
     <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="header container">
+    <header id="primary-header" class="header container">
+
       <nav id="navbar" class="header__navbar">
         <a class="header__logo" href="#">
           <h2>P.A. Simbajon</h2>
@@ -52,9 +53,9 @@
               </svg>              
             </div>
           </li>
-          <li>
+          <!-- <li>
             <a class="header__resume btn" href="#">Resume</a>
-          </li>
+          </li> -->
         </ul>
         <button aria-label="mobile nav button" class="header__bars">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -90,9 +91,9 @@
               </svg>              
             </div>
           </li>
-          <li >
+          <!-- <li >
             <a class="mobile-nav__btn btn" href="#">Resume</a>
-          </li>
+          </li> -->
         </ul>
       </nav>
 
@@ -120,24 +121,24 @@
               <p class="about__description"></p>
               <p class="about__description"></p>
             </div>
-            <div class="about__img-wrapper">
-              <img class="about__img" src="/gradpic.jpg" alt="profile picture"/>
+            <hr class="about__hr" />
+            <h3 class="about__subtitle"></h3>
+            <div class="about__ul-container">
+              <ul class="about__ul">
+                <li class="about__list"></li>
+                <li class="about__list"></li>
+                <li class="about__list"></li>
+              </ul>
+              <ul class="about__ul">
+                <li class="about__list"></li>
+                <li class="about__list"></li>
+                <li class="about__list"></li>
+              </ul>
             </div>
           </div>
-          <hr class="about__hr" />
-          <h3 class="about__subtitle"></h3>
-          <div class="about__ul-container">
-            <ul class="about__ul">
-              <li class="about__list"></li>
-              <li class="about__list"></li>
-              <li class="about__list"></li>
-            </ul>
-            <ul class="about__ul">
-              <li class="about__list"></li>
-              <li class="about__list"></li>
-              <li class="about__list"></li>
-            </ul>
-          </div>
+        </div>
+        <div class="about__img-wrapper">
+          <img loading="lazy" class="about__img" src="/gradpic.jpg" alt="profile picture"/>
         </div>
       </section>
       
@@ -145,7 +146,7 @@
         <h2 class="project__title">Projects</h2>
         <div class="project__content">
           <div class="project__container project__item1">
-            <a href="https://miniproject1-wd-55-github-io.vercel.app" target="_blank" rel="noopener noreferrer"><img class="project__img" src="/projects/project1.png" alt="website image"/></a>
+            <a href="https://miniproject1-wd-55-github-io.vercel.app" target="_blank" rel="noopener noreferrer"><img loading="lazy" class="project__img" src="/projects/project1.png" alt="website image"/></a>
             <div class="project__description">
               <h3 class="project__subtitle"><a class="project__page" href = "https://miniproject1-wd-55-github-io.vercel.app" target="_blank" rel="noopener noreferrer">Kopemanic</a></h3>
               <div class="project__list-container">
@@ -156,7 +157,7 @@
             </div>
           </div>
           <div class="project__container project__item2">
-            <a href="https://pasimbajon-github-io.vercel.app" target="_blank" rel="noopener noreferrer"><img class="project__img" src="/projects/project2.png" alt="website image"/></a>
+            <a href="https://pasimbajon-github-io.vercel.app" target="_blank" rel="noopener noreferrer"><img loading="lazy" class="project__img" src="/projects/project2.png" alt="website image"/></a>
             <div class="project__description">
               <h3 class="project__subtitle"><a class="project__page" href = "https://pasimbajon-github-io.vercel.app" target="_blank" rel="noopener noreferrer">Game-on</a></h3>
               <div class="project__list-container">
@@ -193,7 +194,7 @@
           <div class="contact__form">
             <form action="https://api.web3forms.com/submit" method="POST">
               <input type="hidden" name="access_key" value="8335a6de-e744-4b3c-b342-5e2c8a65956d">
-              <label for="fname">Full Name</label>
+              <label for="name">Full Name</label>
               <input type="text" id="name" name="name" placeholder="Your Full Name" required>
               <label for="email">Email</label>
               <input type="email" name="email" id="email" placeholder="Your email" required>

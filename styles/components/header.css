@@ -1,8 +1,14 @@
 .header{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: sticky;
+    top: 0;
     z-index: 10;
+    transition: background-color 500ms;
+}
+
+.header.sticking {
+    background-color: var(--background-100);
 }
 
 .header__navbar{
@@ -122,7 +128,7 @@
 /* lg */
 @media (min-width: 1024px){  
     .header__link{
-        font-size: var(--size-sm);
+        font-size: var(--size-lg);
     }
     
     .header__sun{

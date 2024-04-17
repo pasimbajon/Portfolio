@@ -9,8 +9,10 @@ import '../styles/components/contact.css'
 import '../styles/components/footer.css'
 import '../styles/utils.css'
 
+import stickyNavbar from './utils/sticky-navbar';
+stickyNavbar();
 import mobileNav from './utils/mobile-nav';
 mobileNav();
-import switchTheme from './utils/dark-theme';
 import inputTxt from './utils/input-txt';
 inputTxt();
+import switchTheme from './utils/dark-theme';

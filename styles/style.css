@@ -2,6 +2,7 @@
     --text: #060a0e;
     --secondary-text:#16833e;
     --background: #e4e4e7;
+    --background-100: #e6e6e6;
     --primary: #21c45d;
     --secondary: #36d399;
     --accent: #21c45d;
@@ -16,6 +17,7 @@
     --text: #f1f5f9;
     --secondary-text:#7ce9a4;
     --background: #18181b;
+    --background-100: #1a1a1a;
     --primary: #3bde77;
     --secondary: #2cc98f;
     --accent: #3bde77;
@@ -33,7 +35,6 @@
     --clr-slate400:#94a3b8;
     --clr-slate600:#475569;
     --clr-slate800:#1e293b;
-
     --default-border-radius: 8px;
     --default-transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, fill .3s ease-in-out, transform .3s ease-in-out;
 
